@@ -1,0 +1,26 @@
+nama = input("Masukan Nama Anda : ")
+nilai_harian = int(input("Masukan Nilai Harian : "))
+nilai_uts = int(input("Masukan Nilai UTS : "))
+nilai_uas = int(input("Masukan Nilai UAS: "))
+nilai_akhir = (nilai_harian+nilai_uts+nilai_uas)/3
+
+if nilai_akhir > 90 and 100:
+    predikat = 'A , Selamat Kamu Lulus'
+elif nilai_akhir > 80 and 90:
+    predikat = 'B , Selamat Kamu Lulus'
+elif nilai_akhir > 70 and 80:
+    predikat = 'C , Pertahankan'
+elif nilai_akhir > 60 and 70:
+    predikat = 'D , Mohon Maaf Di ulang Kembali'
+else:
+    predikat = 'E , Mohon Maaf Tidak Bisa'
+
+print("------HASIL TOTAL NILAI------")
+print("Nama : ",nama)
+print("Nilai Harian : ",nilai_harian)
+print("Nilai UTS : ",nilai_uts)
+print(" Nilai UAS : ",nilai_uas)
+print("------------")
+print("------------")
+print("Nilai Akhir : ",nilai_akhir)
+print("Predikat : ",predikat)
